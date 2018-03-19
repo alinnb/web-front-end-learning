@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <style>
+            ol {
+                margin: 0px;
+            }
+            li {
+                margin:0px;
+            }
+            .header {
+                width: 100%;
+                height: 200px;
+                background:green;
+                /* overflow: auto; */
+            }
+            .header-blank {
+                height: 50px;
+            }
+            .header-img {
+                float: left;
+                width: 20%; 
+            }
+        </style>
+        <div class="header-blank"></div>
+        <img class="header-img" src="../images/corporate.PNG" alt="...">
+        我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，
+        我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，
+    </div>
+    <div style="color:blue">我是Div</div>
+    我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，
+    <div style="color:blue;display:inline;">我是Div inline</div>
+    我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，
+    <span style="color:blue">我是Span</span>
+    我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，
+    <p style="color:black;background-color: green;">我是正常的p</p>
+    我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，
+    <p style="color:black;background-color: green;max-width:500px;margin:0 auto">我是宽度500px居中的p</p>
+    我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，
+    <p style="color:black;background-color: green;max-width:500px;margin:0 auto;padding:10px;border-width:10px;-webkit-box-sizing:border-box">我是p</p>
+    我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，
+    <p style="color:blue;display:inline;margin:0 auto;margin:10px">我是p inline</p>
+    我们用positon来实现下面的窗体布局
+    <div class="container" style="color:black; background-color:gold; position: relative; max-width: 500px; height:200px">
+        <nav class="nav" style="color:black; background-color:fuchsia; position: absolute; width: 100px; height:100%; box-sizing: border-box;">
+            我是Nav
+            <ol>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+                <li>d</li>
+            </ol>
+        </nav>
+        <div class="right" style="margin-left:100px">
+            <section class="right-top" style="color:black; background-color:dimgray; ">
+                我要说话
+            </section>
+            <section class="right-center" style="color:black; background-color:darkblue; ">
+                我也是
+            </section>
+            <section class="right-down" style="color:black; background-color:cornflowerblue; ">
+                我最后说
+            </section>
+        </div>
+    </div>
+    这次我们用Float来实现
+    <style>
+        @media(min-width: 600px) {
+        .float-container {
+            color:black; 
+            background-color:gold; 
+            max-width: 500px; 
+            height:100px;
+            overflow:auto;
+        }
+        .float-nav {
+            color:black; 
+            background-color:fuchsia; 
+            width: 100px; 
+            height:150px; 
+            box-sizing: border-box;
+            float: left;
+        }
+        }
+        @media(max-width: 600px) {
+            .float-container {
+                color:black; 
+                background-color:gold; 
+                height:100px;
+            }
+            .float-nav {
+                display: inline;
+                color:black; 
+                background-color:fuchsia; 
+                box-sizing: border-box;
+            }
+        }
+    </style>
+    <div class="float-container">
+        <nav class="float-nav">
+            我是Nav
+            <ol>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+                <li>d</li>
+            </ol>
+        </nav>
+        <div class="right">
+            <section class="right-top" style="color:black; background-color:dimgray; ">
+                我要说话
+            </section>
+            <section class="right-center" style="color:black; background-color:darkblue; ">
+                我也是
+            </section>
+            <section class="right-down" style="color:black; background-color:cornflowerblue; ">
+                我最后说
+            </section>
+        </div>
+    </div>
+    这次我们用innerblock来实现
+    <style>
+        .inner-block {
+            display:inline-block; 
+            width:200px; 
+            height:100px; 
+            border:solid; 
+            border-color:green;
+            margin-bottom:5px;
+        }
+    </style>
+
+
+
+    <form style="color:blue">我是form</form>
+    我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，
+    <footer style="color:blue">我是footer</footer>
+    我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，
+    <section style="color:blue">我是Section</section>
+    我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，
+    <header style="color:blue">我是header</header>
+    我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，
+    <a href="#">i am a</a>
+    我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，
+    <ui style="color:blue">
+        <li style="display:inline">我是列表1 - inline</li>
+        <li>我是列表2</li>
+    </ui>
+    我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，
+    我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，
+    <ol>
+        <li>a1</li>
+        <li>a2</li>
+    </ol>
+    我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，我是一篇文章，
+    <p style="color:black;background-color:blueviolet;margin:0;position:fixed;bottom:0px;right:0px;width:100px;height:100px;margin:10px;border-width:10px">我是fixed的p,我是漂浮窗</p>
+</body>
+</html>
